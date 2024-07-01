@@ -1,33 +1,95 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <style>
-      .body {
-        padding-top: 40px;
-        padding-bottom: 40px;
-      }
-      .banner {
-  width: 128px;
-  height: 128px;
+<head>
+  <style>
+    .body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #2b16a1;
+      display: flex;
+  justify-content: center;
+    }
+    .banner {
+  display: flex;
+  justify-content: center;
+}
+
+    .banner-image {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+    }
+
+    .name {
+  color: #2b16a1;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+  font-weight: bold;
+}
+    .thumbnail {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
   object-fit: cover;
-  border-radius: 128px;
-}
-.social-icons 
-{ 
-width: 48px;
-height: 48px;
-border-radius: 48px;
-object-fit: cover;
 }
 
-    </style>
+    .social-icons {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+      display: flex;
+  justify-content: space-around;
+  margin-left: 2em;
+  padding-top: 2em;
+    }
 
-  </head>
-   
+    .social-icons a {
+  color: #2b16a1;
+  text-decoration: none;
+  margin-left: 5em;
+  font-weight: bold;
+}
+
+.link {
+  background-color: #f9bc60;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 35px;
+}
+
+.link img{
+  width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50px;
+}
+
+.link a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 640px;
+  flex-grow: 1;
+}
+
+  </style>
+
+</head>
+
 <body>
   <div class="banner">
-    <img src="Thumbnail/Profile Photo.jpeg" alt="Profile Picture">
+    <img src="Thumbnail/Profile Photo.jpeg" alt="Profile Picture" class="banner-image">
   </div>
 
   <div class="name">
@@ -50,23 +112,26 @@ object-fit: cover;
   </div>
 
   <div class="link">
-    <img
-      src="Thumbnail/JI Logo.png" width="60px">
+    <img src="Thumbnail/JI Logo.png" width="60px">
 
     <a target="_blank" href="https://www.judainn.com">Juda's Innovation</a>
   </div>
+  <p></p>
   <div class="link">
     <img src="Thumbnail/Saya.png">
     <a target="_blank" href="https://www.saya.pk"> Pakistan's Leading Clothing Chain</a>
   </div>
+  <p></p>
   <div class="link">
     <img src="Thumbnail/SWM.png">
     <a target="_blank" href="https://www.sayatex.com"> Saya Weaving Mills (Pvt) Ltd.</a>
   </div>
+  <p></p>
   <div class="link">
     <img src="Thumbnail/DA.png" />
     <a target="_blank" href="https://www.dhorajiassociation.org">Dhoraji Association</a>
   </div>
+  <p></p>
   <div class="link">
     <img src="Thumbnail/burlington-stores.jpg">
     <a target="_blank" href="https://www.burlington.com"> Burlington Coat Factory</a>
